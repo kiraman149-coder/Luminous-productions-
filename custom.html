@@ -11,9 +11,23 @@
       background: linear-gradient(135deg, #004d00, #000000); /* green → black gradient */
       color: #ffffff;
       text-align: center;
-      padding: 20px;
-    }
+      padding: 20px; }
+.book-btn {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 15px 25px;
+  background: #004d00; /* green matches Custom theme */
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
 
+.book-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
     /* BACK BUTTON */
     .back {
       position: fixed;
@@ -70,10 +84,6 @@
   <!-- DESCRIPTION -->
   <div class="desc">
     Have a unique idea for your event.? here you can customise our services to your needs. take control 
-  </div>
+  </div><a href="packages.html" class="book-btn">Book Now</a>
 
-  <!-- book now BUTTON -->
-  <a href="#" class="contact-btn">Request a Custom Shoot</a>
-
-</body>
-</html>
+  
