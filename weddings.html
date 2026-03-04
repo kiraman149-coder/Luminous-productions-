@@ -64,7 +64,15 @@
   </style>
 </head>
 
-<body>
+<body><script id="back-fix-script">
+function goBack() {
+  if (document.referrer.includes("index.html")) {
+    window.history.back();
+  } else {
+    window.location.href = "index.html";
+  }
+}
+</script>
 
   <!-- BACK BUTTON -->
 <a href="#" class="back-btn" onclick="goBack()">← Back</a>
