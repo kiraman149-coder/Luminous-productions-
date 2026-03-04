@@ -69,7 +69,37 @@
       opacity: 0.5;
     }
   </style>
-</head>
+ <style>
+.category-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+  gap: 20px;
+}
+
+.category-btn {
+  padding: 20px 30px;
+  font-size: 18px;
+  background: #c9a96e;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.category-btn:hover {
+  transform: scale(1.05);
+  background: #e0c884;
+}
+
+/* Optional per-category colors */
+.category-btn.weddings { background:#c9a96e; }
+.category-btn.casual { background:#a0d8ef; }
+.category-btn.maternity { background:#ff69b4; }
+.category-btn.seasonal { background:#8b4513; }
+</style>/head>
 
 <body>
 
