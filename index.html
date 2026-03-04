@@ -19,6 +19,8 @@
       font-size: 28px;
       font-weight: bold;
       color: #c9a96e;
+      z-index: 2;
+      position: relative;
     }
 
     /* TAGLINE */
@@ -26,26 +28,30 @@
       margin-top: 10px;
       font-size: 16px;
       color: #ccc;
+      z-index: 2;
+      position: relative;
     }
 
-    /* HERO IMAGE - FULL SIZE */
+    /* HERO IMAGE FULL SCREEN */
     .hero {
-      min-height: 300px; /* height adjusts to image */
+      width: 100%;
+      height: 80vh; /* 80% of the viewport height */
       background: url('seasonal.jpg') center center no-repeat;
-      background-size: contain; /* ensures full image visible */
-      margin-top: 20px;
+      background-size: cover; /* fills width and height */
       display: flex;
-      align-items: center;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
       color: white;
       font-size: 28px;
       font-weight: bold;
       text-shadow: 1px 1px 4px black;
+      margin-top: 20px;
     }
 
     /* MAIN GRID */
     .grid {
-      margin-top: 40px;
+      margin-top: 0;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
