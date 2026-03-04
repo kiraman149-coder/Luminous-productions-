@@ -32,12 +32,12 @@
       position: relative;
     }
 
-    /* HERO IMAGE FULL SCREEN */
+    /* HERO IMAGE - FULL SCREEN + CINEMATIC ZOOM */
     .hero {
       width: 100%;
-      height: 80vh; /* 80% of the viewport height */
+      height: 80vh;
       background: url('seasonal.jpg') center center no-repeat;
-      background-size: cover; /* fills width and height */
+      background-size: cover;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -46,7 +46,14 @@
       font-size: 28px;
       font-weight: bold;
       text-shadow: 1px 1px 4px black;
-      margin-top: 20px;
+
+      /* Cinematic zoom animation */
+      animation: zoomIn 10s ease-in-out forwards;
+    }
+
+    @keyframes zoomIn {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.05); }
     }
 
     /* MAIN GRID */
@@ -58,7 +65,7 @@
       padding: 20px;
     }
 
-    /* BUTTON STYLE */
+    /* CATEGORY BUTTONS */
     .card {
       padding: 40px 20px;
       border-radius: 10px;
@@ -66,11 +73,12 @@
       font-size: 20px;
       font-weight: bold;
       display: block;
-      transition: transform 0.2s;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .card:hover {
-      transform: scale(1.05);
+      transform: scale(1.08);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
     }
 
     /* CATEGORY COLORS */
