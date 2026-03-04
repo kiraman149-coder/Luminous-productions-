@@ -13,7 +13,6 @@
       text-align: center;
     }
 
-}
     /* LOGO */
     .logo {
       margin-top: 40px;
@@ -29,9 +28,23 @@
       color: #ccc;
     }
 
+    /* HERO IMAGE */
+    .hero {
+      height: 300px;
+      background: url('seasonal.jpg') center/cover no-repeat;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+      text-shadow: 1px 1px 4px black;
+    }
+
     /* MAIN GRID */
     .grid {
-      margin-top: 60px;
+      margin-top: 40px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
@@ -46,13 +59,18 @@
       font-size: 20px;
       font-weight: bold;
       display: block;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
     }
 
     /* CATEGORY COLORS */
     .weddings { background: #c9a96e; color: #000; }
     .casual { background: #a0d8ef; color: #000; }
-    .maternity { background: #ff69b4; }
-    .seasonal { background: #8b4513; }
+    .maternity { background: #ff69b4; color: #000; }
+    .seasonal { background: #8b4513; color: #fff; }
     .custom { background: #000000; color: #ffffff; }
 
   </style>
@@ -63,6 +81,10 @@
   <div class="logo">Luminous Productions</div>
   <div class="tagline">We tell your story in every shade of light</div>
 
+  <!-- HERO IMAGE -->
+  <div class="hero">Your Story, Our Vision</div>
+
+  <!-- CATEGORY GRID -->
   <div class="grid">
     <a href="weddings.html" class="card weddings">Weddings</a>
     <a href="casual.html" class="card casual">Casual</a>
