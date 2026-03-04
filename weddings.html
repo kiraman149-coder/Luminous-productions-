@@ -10,9 +10,23 @@
       font-family: Arial, sans-serif;
       background: #1a1a1a;
       color: white;
-      text-align: center;
-    }
+      text-align: centre }
+.book-btn {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 15px 25px;
+  background: #c9a96e; /* gold matches wedding theme */
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
 
+.book-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
     /* BACK BUTTON */
     .back {
       position: fixed;
@@ -68,7 +82,7 @@
     <div class="box"></div>
     <div class="box"></div>
     <div class="box"></div>
-  </div>
+  </div><a href="packages.html" class="book-btn">Book Now</a>
 
 </body>
 </html>
