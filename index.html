@@ -2,13 +2,21 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Kira Visuals</title>
+  <title>Luminous Productions</title>
   <style>
     body {
       margin: 0;
       background: #0b0b0b;
       color: white;
       font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      font-weight: bold;
+      font-size: 18px;
     }
 
     .hero {
@@ -18,11 +26,17 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+      padding: 20px;
     }
 
     h1 {
       font-size: 32px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      opacity: 0.7;
+      margin-bottom: 25px;
     }
 
     .button {
@@ -31,43 +45,65 @@
       padding: 15px 25px;
       text-decoration: none;
       border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
     }
 
     .portfolio {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 10px;
-      padding: 20px;
+      margin-top: 20px;
     }
 
-    .portfolio img {
-      width: 100%;
-      border-radius: 5px;
-    }
-
-    .contact {
-      text-align: center;
-      padding: 40px;
+    .placeholder {
+      background: #1a1a1a;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.5;
     }
   </style>
 </head>
 
 <body>
 
+<div class="navbar">Luminous Productions</div>
+
 <section class="hero">
   <h1>Not just photos.<br>Stories you can feel.</h1>
-  <a href="https://wa.me/251XXXXXXXXX" class="button">Book a Session</a>
+  <p>Cinematic storytelling through photography</p>
+  <a href="#" class="button">Contact Coming Soon</a>
 </section>
 
-<section class="portfolio">
-  <img src="https://via.placeholder.com/500">
-  <img src="https://via.placeholder.com/500">
-  <img src="https://via.placeholder.com/500">
-  <img src="https://via.placeholder.com/500">
+<section class="section">
+  <h2>Portfolio</h2>
+  <p>Work will be added soon</p>
+
+  <div class="portfolio">
+    <div class="placeholder">Coming Soon</div>
+    <div class="placeholder">Coming Soon</div>
+    <div class="placeholder">Coming Soon</div>
+    <div class="placeholder">Coming Soon</div>
+  </div>
 </section>
 
-<section class="contact">
-  <a href="https://wa.me/251XXXXXXXXX" class="button">Message me</a>
+<section class="section">
+  <h2>About</h2>
+  <p>
+    Luminous Productions creates cinematic visuals that capture emotion,
+    connection, and story in every frame.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Contact</h2>
+  <p>Contact information will be added soon</p>
 </section>
 
 </body>
